@@ -1,0 +1,23 @@
+#!/usr/bin/lua
+szero=#({true})
+sone=szero+szero
+stwo=sone+sone
+sthree=stwo+stwo
+sfour=sthree+sthree
+sfive=sfour+sfour
+ssix=sfive+sfive
+
+print(string.char(
+	ssix+sthree,
+	ssix+sfive+stwo+szero,
+	ssix+sfive+sthree+stwo,
+	ssix+sfive+sthree+stwo,
+	ssix+sfive+sthree+stwo+sone+szero,
+	sfive,
+	ssix+sfour+stwo+sone+szero,
+	ssix+sfive+sthree+stwo+sone+szero,
+	ssix+sfive+sfour+sone,
+	ssix+sfive+sthree+stwo,
+	ssix+sfive+stwo,
+	sthree+sone
+))

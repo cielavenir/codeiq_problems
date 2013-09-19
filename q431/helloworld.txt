@@ -1,0 +1,58 @@
+[言語指定] Restricted Words (Hello World)
+出力したい値をどうやって手に入れるか？
+---
+解答評価のポイント：与えられた条件を利用する能力を評価します。
+言語・領域	：言語指定
+設問ごとの制限時間：設問数は1問です。制限時間は特に設けていませんが15分ぐらいが標準的です。
+
+・プログラミング言語は
+AppleScript(osascript)/C/C++/C#/Clojure/D/Erlang/Fortran/Go/Groovy/Haskell/
+Hello Algorithm/HSP/Java/JavaScript(Node.js)/Kuin/Lisp/Lua/OCaml/Pascal/
+Perl/PHP/Pike/Python/R/Ruby/Scala/Scheme/Smalltalk/VB.Net
+のいずれかを使用して下さい。指定された言語以外での解答は評価されません。
+
+・解答はファイルアップロード形式です。
+---
+標準出力に
+Hello World
+と出力するプログラムを作成して下さい。
+
+ただし、<b>数値、文字及び文字列リテラルを解答に含めることはできません。</b>
+Perlのqqやqw、Rubyの%Q、%q、%wなども避けたほうが評価が高くなります。
+言語仕様をフル活用して下さい！
+
+プログラミング言語は
+AppleScript(osascript)/C/C++/C#/Clojure/D/Erlang/Fortran/Go/Groovy/Haskell/
+Hello Algorithm/HSP/Java/JavaScript(Node.js)/Kuin/Lisp/Lua/OCaml/Pascal/
+Perl/PHP/Pike/Python/R/Ruby/Scala/Scheme/Smalltalk/VB.Net
+のいずれかを使用して下さい。指定された言語以外での解答は評価されません。
+
+作成したプログラムは、テキストファイル(txt)に変換し、ファイルアップロードで提出して下さい。
+Shebangもしくはコメントによって解答言語がわかるようにして下さい。
+
+なお、Javaでの解答の場合は、メインクラスにもpublicを付けないでくださると採点の都合上助かります(強制ではありません)。
+
+【採点環境】
+採点は以下の環境で行います。
+gcc 4.2.1 / clang Apple LLVM version 4.2
+- C++11であるなど、gccでコンパイルできない場合clangでの採点となります。
+Mono 2.10.10
+- C# 4.0の場合dmcsでの採点となります。
+Clojure 1.5.1
+Java 1.7.0_17
+Node.js 0.10.15
+Perl 5.12.4
+PHP 5.3.26
+Python 2.7.2/3.3.2
+Ruby 1.8.7/1.9.3/2.0.0
+R 3.0.1
+Scala 2.10
+Hello Algorithm
+https://chrome.google.com/webstore/detail/hello-algorithm/pdpjhjlfphfhjofjigmiiphifbndpgci/
+OpenHSP http://dev.onionsoft.net/svn/openhsp/trunk (CL ver3.4beta2)
+go version 1.1.1
+osascript on OSX 10.8.5
+なお、ここに書かれていない場合、もしくは採点者のOSX上で正しい出力がなされない場合は、改めてideoneで採点させて頂きます。
+Schemeはguileでの採点となりますのでR6RSはご利用になれません。ご了承下さい。
+
+KuinはBootCamp上のWindows Server 2012 (DreamSpark)でKuin 0.98 (9/17以降は1.00)を使用して採点しますので、フィードバックが遅れる可能性があります。ご了承下さい。

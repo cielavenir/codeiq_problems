@@ -1,0 +1,24 @@
+#!/usr/bin/node
+var szero=[].length.toString().length;
+//var szero=-~[];
+//var szero=-~false;
+//var szero;
+//szero=-~szero;
+sone=szero<<szero;
+stwo=szero<<(szero+szero);
+sthree=szero<<(szero+szero+szero);
+sfour=szero<<(szero+szero+szero+szero);
+sfive=szero<<(szero+szero+szero+szero+szero);
+ssix=szero<<(szero+szero+szero+szero+szero+szero);
+str=String.fromCharCode(ssix|sthree);
+str+=String.fromCharCode(ssix|sfive|stwo|szero);
+str+=String.fromCharCode(ssix|sfive|sthree|stwo);
+str+=String.fromCharCode(ssix|sfive|sthree|stwo);
+str+=String.fromCharCode(ssix|sfive|sthree|stwo|sone|szero);
+str+=String.fromCharCode(sfive);
+str+=String.fromCharCode(ssix|sfour|stwo|sone|szero);
+str+=String.fromCharCode(ssix|sfive|sthree|stwo|sone|szero);
+str+=String.fromCharCode(ssix|sfive|sfour|sone);
+str+=String.fromCharCode(ssix|sfive|sthree|stwo);
+str+=String.fromCharCode(ssix|sfive|stwo);
+console.log(str);

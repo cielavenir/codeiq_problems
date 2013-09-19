@@ -1,0 +1,17 @@
+open Char;;
+let rec one () = Array.length [|true|];;
+let rec two () = one()+one();;
+let rec x (n) = two()*n;;
+let rec y (n) = two()*n+one();;
+print_char(chr(x(x(x(y(x(x(one()))))))));;
+print_char(chr(y(x(y(x(x(y(one()))))))));;
+print_char(chr(x(x(y(y(x(y(one()))))))));;
+print_char(chr(x(x(y(y(x(y(one()))))))));;
+print_char(chr(y(y(y(y(x(y(one()))))))));;
+print_char(chr(x(x(x(x(x(one())))))));;
+print_char(chr(y(y(y(x(y(x(one()))))))));;
+print_char(chr(y(y(y(y(x(y(one()))))))));;
+print_char(chr(x(y(x(x(y(y(one()))))))));;
+print_char(chr(x(x(y(y(x(y(one()))))))));;
+print_char(chr(x(x(y(x(x(y(one()))))))));;
+print_char(chr(x(y(x(one())))));;

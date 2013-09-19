@@ -1,0 +1,30 @@
+func Main()
+	do Kuin@Act()
+	var i4 : int :: true.ToStr().Len()
+	var i5 : int :: false.ToStr().Len()
+	var i01 : int :: i5-i4
+{
+	var a : []bool :: [true]bool
+	var i01 : int :: a.Len()
+}
+	var i00 : int :: i01-i01
+	var i02 : int :: i01+i01
+	var i04 : int :: i02+i02
+	var i08 : int :: i04+i04
+	var i10 : int :: i08+i08
+	var i20 : int :: i10+i10
+	var i40 : int :: i20+i20
+	var s : []char :: #[i01+i02+i08]char
+	do s[i00] :: (i40+i08) $ char
+	do s[i01] :: (i40+i20+i04+i01) $ char
+	do s[i02] :: (i40+i20+i08+i04) $ char
+	do s[i01+i02] :: (i40+i20+i08+i04) $ char
+	do s[i04] :: (i40+i20+i08+i04+i02+i01) $ char
+	do s[i01+i04] :: (i20) $ char
+	do s[i02+i04] :: (i40+i10+i04+i02+i01) $ char
+	do s[i01+i02+i04] :: (i40+i20+i08+i04+i02+i01) $ char
+	do s[i08] :: (i40+i20+i10+i02) $ char
+	do s[i01+i08] :: (i40+i20+i08+i04) $ char
+	do s[i02+i08] :: (i40+i20+i04) $ char
+	do Dbg@Log(s)
+end func

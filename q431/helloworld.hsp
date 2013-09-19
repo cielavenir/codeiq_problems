@@ -1,0 +1,22 @@
+sdim s
+dim i01
+i01++
+i02=i01+i01
+i04=i02+i02
+i08=i04+i04
+i10=i08+i08
+i20=i10+i10
+i40=i20+i20
+poke s,i00,i40+i08
+poke s,i01,i40+i20+i04+i01
+poke s,i02,i40+i20+i08+i04
+poke s,i01+i02,i40+i20+i08+i04
+poke s,i04,i40+i20+i08+i04+i02+i01
+poke s,i01+i04,i20
+poke s,i02+i04,i40+i10+i04+i02+i01
+poke s,i01+i02+i04,i40+i20+i08+i04+i02+i01
+poke s,i08,i40+i20+i10+i02
+poke s,i01+i08,i40+i20+i08+i04
+poke s,i02+i08,i40+i20+i04
+mes s
+end
