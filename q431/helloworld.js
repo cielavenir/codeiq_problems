@@ -1,0 +1,21 @@
+import System;
+
+var szero=[].length.ToString().length;
+var sone=szero<<szero;
+var stwo=szero<<(szero+szero);
+var sthree=szero<<(szero+szero+szero);
+var sfour=szero<<(szero+szero+szero+szero);
+var sfive=szero<<(szero+szero+szero+szero+szero);
+var ssix=szero<<(szero+szero+szero+szero+szero+szero);
+Console.Write(Convert.ToChar(ssix|sthree));
+Console.Write(Convert.ToChar(ssix|sfive|stwo|szero));
+Console.Write(Convert.ToChar(ssix|sfive|sthree|stwo));
+Console.Write(Convert.ToChar(ssix|sfive|sthree|stwo));
+Console.Write(Convert.ToChar(ssix|sfive|sthree|stwo|sone|szero));
+Console.Write(Convert.ToChar(sfive));
+Console.Write(Convert.ToChar(ssix|sfour|stwo|sone|szero));
+Console.Write(Convert.ToChar(ssix|sfive|sthree|stwo|sone|szero));
+Console.Write(Convert.ToChar(ssix|sfive|sfour|sone));
+Console.Write(Convert.ToChar(ssix|sfive|sthree|stwo));
+Console.Write(Convert.ToChar(ssix|sfive|stwo));
+Console.WriteLine();
