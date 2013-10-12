@@ -1,16 +1,17 @@
 #!/usr/bin/node
+//Please remove above to allow tsc (typescript).
 var szero=[].length.toString().length;
 //var szero=-~[];
 //var szero=-~false;
 //var szero;
 //szero=-~szero;
-sone=szero<<szero;
-stwo=szero<<(szero+szero);
-sthree=szero<<(szero+szero+szero);
-sfour=szero<<(szero+szero+szero+szero);
-sfive=szero<<(szero+szero+szero+szero+szero);
-ssix=szero<<(szero+szero+szero+szero+szero+szero);
-str=String.fromCharCode(ssix|sthree);
+var sone=szero<<szero;
+var stwo=szero<<(szero+szero);
+var sthree=szero<<(szero+szero+szero);
+var sfour=szero<<(szero+szero+szero+szero);
+var sfive=szero<<(szero+szero+szero+szero+szero);
+var ssix=szero<<(szero+szero+szero+szero+szero+szero);
+var str=String.fromCharCode(ssix|sthree);
 str+=String.fromCharCode(ssix|sfive|stwo|szero);
 str+=String.fromCharCode(ssix|sfive|sthree|stwo);
 str+=String.fromCharCode(ssix|sfive|sthree|stwo);

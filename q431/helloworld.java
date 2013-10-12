@@ -1,4 +1,5 @@
 import java.lang.Math;
+//This source is compatible with Visual J# (vjc).
 class Main{
 	static int szero;
 	public static void main(String[]arg){

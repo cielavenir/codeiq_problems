@@ -13,4 +13,4 @@ copy (ASCII character (i20)) to sp
 copy (ASCII character (i40+i10+i04+i02+i01)) to W
 copy (ASCII character (i40+i20+i10+i02)) to r
 copy (ASCII character (i40+i20+i04)) to d
-log H & e & l & l & o & sp & W & o & r & l & d
+log H & e & l & l & o & sp & W & o & r & l & d
