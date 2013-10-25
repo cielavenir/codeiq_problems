@@ -55,7 +55,7 @@ d=0
 (result.size-1).times{|i|
 	d+=distance(result[i],result[i+1])
 }
-if (d-dist).abs>1e-3
+if (d-dist).abs>5e-4
 	puts 'dist is wrong: '+d.to_s
 	exit
 end
