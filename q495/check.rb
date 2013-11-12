@@ -18,6 +18,11 @@ def getline
 	end
 end
 
+### main
+if ARGV.size<1
+	puts "check.rb data.in < answer"
+	exit
+end
 places=Hash.new{|h,k|h[k]=[]}
 cities=[]
 File.open(ARGV[0]){|f|
