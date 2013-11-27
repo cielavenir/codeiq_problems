@@ -1,13 +1,11 @@
-import Foreign.Storable
+-- import Foreign.Storable
 import Data.Char
-one = do
-	length $ show $ sizeOf $ True -- 4
-two = do
-	one+one
-x n = do
-	two*n
-y n = do
-	two*n+one
+-- one = length $ show $ sizeOf $ True -- 4
+one = length $ return undefined -- https://gist.github.com/takeouchida/7669018
+two = one+one
+x n = two*n
+-- y n = two*n+one
+y n = succ $ x n
 main = do
 	putChar $ chr $ x $ x $ x $ y $ x $ x $ one
 	putChar $ chr $ y $ x $ y $ x $ x $ y $ one
