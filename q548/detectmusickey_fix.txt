@@ -1,0 +1,78 @@
+[アルゴリズム] Detect Music Key
+音階を検出して下さい
+---
+特典：問題受付終了後、CodeIQ公式ブログに解説記事を掲載する予定です。記事内で優秀な解法を公開する際、ニックネームと解答コードを掲載するかもしれませんので予めご了承ください。
+解答評価のポイント：正しく音階を検出できているかを評価します。
+言語・領域	：アルゴリズム
+設問ごとの制限時間：設問数は1問です。制限時間は特に設けていませんが15分ぐらいが標準的です。
+
+・解答はファイルアップロード形式です。今回は先頭に解答を記入していただきますので解答方法をよく読んで下さい。
+
+---
+音楽は次に挙げる12音で構成されています。
+<code><pre class="highlight" lang="html">
+C Cs D Ds E F Fs G Gs A As B
+</pre></code>
+また、楽曲には調性があり、(転調がある場合その前後それぞれで)12音中決まった7音が使われます。
+主音を軸として、各音がこの7音に含まれるかどうかは
+<code><pre class="highlight" lang="html">
+true,false,true,false,true,true,false,true,false,true,false,true
+</pre></code>
+と表されます。
+音のリストが与えられるので、その音が全て含まれうる音階(調)(の主音)を答えて下さい。
+なお、今回は長調のみを考えるものとします。
+
+例えば、ハ長調で使われる音は
+<code><pre class="highlight" lang="html">
+C D E F G A B
+</pre></code>
+で、その主音は<b>C</b>です。
+
+[入力]
+<code><pre class="highlight" lang="html">
+T
+N1
+Key1 Key2 … keyN1
+…
+NT
+Key1 Key2 … keyNT
+</pre></code>
+先頭行はデータセットの数Tが入ります。
+続くT*2行は各データセットからなります。1行目は音のリストの数、2行目は音のリストです。
+含まれうる音のリストは以下のとおりです。
+<code><pre class="highlight" lang="html">
+C Cs D Ds E F Fs G Gs A As B
+</pre></code>
+
+[出力]
+その音が全て含まれうる音階(の主音)を、上記リストの順番(CからB)で空白で区切って出力して下さい。
+該当する音階がない場合はinvalidと出力して下さい。
+
+[サンプル]
+サンプル(sample.in)は、
+<code><pre class="highlight" lang="html">
+5
+1
+C
+7
+C D E F G A B
+10
+A B C D E F G A B C
+8
+C Cs D E F G A B
+3
+C Cs Fs
+</pre></code>
+となっています。これに対応する出力は、
+<code><pre class="highlight" lang="html">
+C Cs Ds F G Gs As
+C
+C
+invalid
+Cs
+</pre></code>
+となります(sample.ans)。(公開当初のsample.ansは誤っていました。申し訳ございません)
+音の数が7未満でも音階が決まりうる場合に注意して下さい。
+
+解答方法及びデータセットは、<a href="https://dl.dropboxusercontent.com/u/110505645/CodeIQ/2013/11/detectmusickey.zip">detectmusickey.zip</a>に格納されています。
+data.inに対する解答を、answer.txtを熟読の上提出して下さい。
