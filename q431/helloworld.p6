@@ -1,0 +1,21 @@
+#!/usr/bin/perl6
+my $szero;
+$szero++;
+my $sone=$szero+<$szero;
+my $stwo=$szero+<($szero+$szero);
+my $sthree=$szero+<($szero+$szero+$szero);
+my $sfour=$szero+<($szero+$szero+$szero+$szero);
+my $sfive=$szero+<($szero+$szero+$szero+$szero+$szero);
+my $ssix=$szero+<($szero+$szero+$szero+$szero+$szero+$szero);
+my $str=chr($ssix+|$sthree);
+$str~=chr($ssix+|$sfive+|$stwo+|$szero);
+$str~=chr($ssix+|$sfive+|$sthree+|$stwo);
+$str~=chr($ssix+|$sfive+|$sthree+|$stwo);
+$str~=chr($ssix+|$sfive+|$sthree+|$stwo+|$sone+|$szero);
+$str~=chr($sfive);
+$str~=chr($ssix+|$sfour+|$stwo+|$sone+|$szero);
+$str~=chr($ssix+|$sfive+|$sthree+|$stwo+|$sone+|$szero);
+$str~=chr($ssix+|$sfive+|$sfour+|$sone);
+$str~=chr($ssix+|$sfive+|$sthree+|$stwo);
+$str~=chr($ssix+|$sfive+|$stwo);
+say $str;
