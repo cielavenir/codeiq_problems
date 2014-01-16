@@ -18,7 +18,7 @@ manual.each{|line|
 	ret<<line.chomp
 	i+=1
 }
-while i<100
+while i<N/2
 	t=T.zip(KEY.rotate(rand(12))).select(&:last).map(&:first)
 	n=rand(1..30)
 	s=n.times.map{t[rand(t.size)]}.shuffle*' '

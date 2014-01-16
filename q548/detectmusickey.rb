@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 T=['C','Cs','D','Ds','E','F','Fs','G','Gs','A','As','B']
 KEY=[true,false,true,false,true,true,false,true,false,true,false,true]
+#KEY=[true,false,false,false,true,true,false,true,false,false,false,true]
 def solve(s)
 	h={}
 	s.split.each{|e|h[T.index(e)]=1}
