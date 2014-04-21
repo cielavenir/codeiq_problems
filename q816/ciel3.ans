@@ -1,0 +1,43 @@
+#if   false
+   
+   
+   
+   	
+   	
+	
+					   	
+   	
+	
+						   	
+ 	   	 	 
+	
+  
+
+
+eval("puts ARGF.map{|e|e.to_i}.reduce(:+);exit;") if "0";
+eval("use v6;my \$a=get();say \$a+get();exit;");
+eval("print <>+<>;exit;");
+=begin DATA
+#elif __STDC__
+//above are Whitespace, Ruby, Perl6 and Perl respectively.
+//C
+int main(){int a,b;scanf("%d%d",&a,&b);printf("%d\n",a+b);return 0;}
+#elif __PIKE__
+//Pike
+int main(){Stdio.stdout.write((int)Stdio.stdin.gets()+(int)Stdio.stdin.gets()+"\n");return 0;}
+#elif __MonoCS__
+//Csharp
+using System;
+class HybridAddition{
+	static void Main(){
+		Console.WriteLine(int.Parse(Console.ReadLine())+int.Parse(Console.ReadLine()));
+	}
+}
+#else
+//Fsharp
+open System;;
+Console.WriteLine((Console.ReadLine()|>int) + (Console.ReadLine()|>int));;
+#endif
+#if false
+=end DATA
+#endif

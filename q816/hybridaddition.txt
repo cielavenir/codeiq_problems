@@ -1,0 +1,71 @@
+[コーディングパズル] hybrid A+B problem
+3つの言語かつ同一ソースで足し算をして下さい
+---
+特典：問題受付終了後、CodeIQ公式ブログに解説記事を掲載する予定です。その際、ニックネームと解答コードを掲載するかもしれませんので予めご了承ください。
+解答評価のポイント：多言語かつ同一ソースで正しく計算ができているかを評価します。
+言語・領域	：コーディングパズル
+設問ごとの制限時間：設問数は1問です。制限時間は特に設けていませんが30分ぐらいが標準的です。
+
+・解答はファイルアップロード形式です。
+---
+[問題]
+標準入力の1行目と2行目に数値が与えられます。その和を標準出力に出力して下さい。
+ただし、解答ソースコードは、<b>同一ソースコードで、後に述べる言語から3つ以上で処理できる必要があります。</b>
+出力において、終端に改行はあってもなくても構いません。
+
+※stdoutに終了メッセージを出力する言語があるようです。その場合、stdoutの1行目で判断しますので、改行を必ず入れて下さい。
+
+[制約]
+入力の数値は1以上10000000以下です。
+また、実行は15秒以内でなければなりません。
+
+[入出力例]
+入力
+<code><pre class="highlight" lang="html">
+3624252
+6003781
+</pre></code>
+
+出力
+<code><pre class="highlight" lang="html">
+9628033
+*** 2行目以降に別の出力があっても正解扱いとします ***
+</pre></code>
+
+[解答方法]
+answer.txtの1行目に解答言語を記述し、2行目以降に任意で感想などをお書き下さい。
+answer.srcに解答ソースコードを記述して下さい。
+answer.txtとanswer.srcをzip圧縮して提出して下さい。
+
+テンプレートは<a href="https://dl.dropboxusercontent.com/u/110505645/CodeIQ/2014/03/hybridaddition.zip">hybridaddition.zip</a>からダウンロードできます。
+
+[言語一覧]
+ideone.comで使用できる言語全てが使用可能ですが、以下の組からはそれぞれ1つしか選択できません。
+<table border="1" style="border-collapse:collapse">
+<tr><td>C/Objective-C/C++ 4.3.2/C++ 4.8.1/C++11</td></tr>
+<tr><td>Java/Java7</td></tr>
+<tr><td>Pascal (fpc)/Pascal (gpc)</td></tr>
+<tr><td>Python/Python 3</td></tr>
+<tr><td>AWK (gawk)/AWK (mawk)</td></tr>
+<tr><td>Prolog (gnu)/Prolog (swi)</td></tr>
+</table>
+
+例えば、
+
+answer.txt
+<code><pre class="highlight" lang="html">
+C/Objective-C/C++11
+</pre></code>
+
+answer.src
+<code><pre class="highlight" lang="c">
+#include &lt;stdio.h&gt;
+int main(){int a,b;scanf("%d%d",&a,&b);printf("%d",a+b);return 0;}
+</pre></code>
+
+は、確かに3つの言語で処理が可能ですが、「C/Objective-C/C++ 4.3.2/C++ 4.8.1/C++11」の組から2つ以上選択しているため無効となります。
+
+評価
+1つの言語で正しく動作:2点
+2つの言語で正しく動作:3点
+3つ以上の言語で正しく動作:5点

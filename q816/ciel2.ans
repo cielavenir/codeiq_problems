@@ -1,0 +1,20 @@
+#if   0
+$a=   <>;
+$b=   <>;
+print   $a+$b;
+__END__
+  #else   
+main(){int   a,b;scanf("%d%d",&a,&b);printf("%d\n",a+b);exit(0);}
+#endif   
+   	
+   	
+	
+					   	
+   	
+	
+						   	
+ 	   	 	 
+	
+  
+
+

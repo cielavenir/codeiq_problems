@@ -1,0 +1,18 @@
+#if   0
+p   $<.map(&:to_i).reduce(:+)
+__END__
+  #else   
+main(){int   a,b;scanf("%d%d",&a,&b);printf("%d\n",a+b);exit(0);}
+#endif   
+   	
+   	
+	
+					   	
+   	
+	
+						   	
+ 	   	 	 
+	
+  
+
+

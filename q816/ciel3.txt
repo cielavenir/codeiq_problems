@@ -1,0 +1,9 @@
+Whitespace/Ruby/Perl6/Perl/C/Pike/C#/F#
+
+#if false中にWhitespace/Ruby/Perl6/Perlを入れました。
+Perlはuse v6;でエラーになるのを無視することで組み込んでいます。
+Perl6は__END__が使えないので、C側は=begin DATAと=end DATAで囲いました。
+また、プリプロセッサ中で__STDC__によりCを、__PIKE__によりPikeを使うことができます。
+C#については、ideoneに存在するのはMonoなので、__MonoCS__により切り分けられます。
+F#はタブが使えませんが、タブを#if false中に押しこむことで入れることができました。
+なお、VBはプリプロセッサの形式が違うため、入れることができませんでした。
