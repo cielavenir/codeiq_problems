@@ -1,0 +1,9 @@
+szero=length([[]])
+sone=szero<<szero
+stwo=szero<<(szero+szero)
+sthree=szero<<(szero+szero+szero)
+sfour=szero<<(szero+szero+szero+szero)
+sfive=szero<<(szero+szero+szero+szero+szero)
+ssix=szero<<(szero+szero+szero+szero+szero+szero)
+print(Strchr([ssix+sthree,ssix+sfive+stwo+szero,ssix+sfive+sthree+stwo,ssix+sfive+sthree+stwo,ssix+sfive+sthree+stwo+sone+szero,sfive,ssix+sfour+stwo+sone+szero,ssix+sfive+sthree+stwo+sone+szero,ssix+sfive+sfour+sone,ssix+sfive+sthree+stwo,ssix+sfive+stwo]))
+quit
