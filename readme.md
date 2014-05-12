@@ -1,21 +1,21 @@
 ## CodeIQ Problems
 
 ### q431
-<https://codeiq.jp/ace/cielavenir/q431>
-Restricted Words (Hello World)
+- Restricted Words (Hello World)
+- <https://codeiq.jp/ace/cielavenir/q431>
 
 ### q495
-<https://codeiq.jp/ace/cielavenir/q495>
-Shortest Trip
+- Shortest Trip
+- <https://codeiq.jp/ace/cielavenir/q495>
 
 ### q548
-<https://codeiq.jp/ace/cielavenir/q548>
-Detect Music Key
+- Detect Music Key
+- <https://codeiq.jp/ace/cielavenir/q548>
 
 ### q816
-<https://codeiq.jp/ace/cielavenir/q816>
-hybrid A+B problem
+- hybrid A+B problem
+- <https://codeiq.jp/ace/cielavenir/q816>
 
 ### q817
-<https://codeiq.jp/ace/cielavenir/q817>
-C++の間違い探し
+- C++の間違い探し
+- <https://codeiq.jp/ace/cielavenir/q817>
