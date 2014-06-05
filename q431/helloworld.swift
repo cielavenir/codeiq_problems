@@ -1,8 +1,8 @@
 import Foundation
 
 var output = NSFileHandle.fileHandleWithStandardOutput()
-var arr = [YES]
-var szero = arr.count()
+var arr = [true]
+var szero = arr.count
 var sone = szero<<(szero)
 var stwo = szero<<(szero+szero)
 var sthree = szero<<(szero+szero+szero)
