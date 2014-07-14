@@ -19,3 +19,11 @@
 ### q817
 - C++の間違い探し
 - <https://codeiq.jp/ace/cielavenir/q817>
+
+### q984
+- モーニングクエスト：約数の和
+- <https://codeiq.jp/ace/cielavenir/q984>
+
+### q985
+- Mercurialに入門しよう！
+- <https://codeiq.jp/ace/cielavenir/q985>
