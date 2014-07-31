@@ -27,4 +27,4 @@ bytes[sthree|sone|szero] = CChar(sthree|sone)
 
 //both of these works.
 //NSFileHandle.fileHandleWithStandardOutput().writeData(data)
-//print(NSString(data:data, encoding:NSUTF8StringEncoding))
+print(NSString(data:data, encoding:NSUTF8StringEncoding))
