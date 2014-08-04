@@ -27,3 +27,7 @@
 ### q985
 - Mercurialに入門しよう！
 - <https://codeiq.jp/ace/cielavenir/q985>
+
+### q1015
+- モーニングクエスト：フィボナッチ数列
+- <https://codeiq.jp/ace/cielavenir/q1015>

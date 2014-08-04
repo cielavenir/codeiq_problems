@@ -1,0 +1,23 @@
+・Mercurialは分散型バージョン管理システムの1つであり、cvsやsubversionに代表される集中型バージョン管理システムと比較される。作者は[Matt] Mackall氏で、開発言語は[Python](またはPython+C)である。Mercurialのコマンドは全て[hg]で始まる。これは、Mercurialが水銀の意味であることから、その元素記号に由来する。
+・Mercurialにおいて、直前のコミットを取り消すには、
+hg [rollback]
+とすれば良い。
+・Mercurialのリポジトリにa.txt、b.txt、c.txtが存在し、それぞれをローカルで変更しているとする。このとき、a.txtだけをコミットするには、
+hg commit [-I](または--include) a.txt
+とすれば良い。
+※a.txt以外をコミットするには、hg commit -X(または--exclude) a.txtとします。
+
+hg commit -Iについては以下のシーケンスで確認できます。
+hg init
+touch a.txt b.txt c.txt
+hg add *
+hg commit -m "Initial"
+echo a &gt;a.txt
+echo b &gt;b.txt
+echo c &gt;c.txt
+hg commit -I a.txt
+※「flyingfoozy」様から指摘があったのですが、-Iはなくても意図する動作になります。申し訳ございません。
+ご指摘ありがとうございました。
+
+MercurialはFirefoxやPyPyが採用しており、BitbucketやGoogle Codeでホストすることができます。
+また、Windows用のツールが充実しているのも特徴です。
