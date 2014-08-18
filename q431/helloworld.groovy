@@ -1,11 +1,12 @@
-#!/usr/bin/groovy
-int szero=Math.log(Math.E).toInteger()
-int sone=szero<<szero;
-int stwo=szero<<(szero+szero);
-int sthree=szero<<(szero+szero+szero);
-int sfour=szero<<(szero+szero+szero+szero);
-int sfive=szero<<(szero+szero+szero+szero+szero);
-int ssix=szero<<(szero+szero+szero+szero+szero+szero);
+#!/usr/bin/env groovy
+//szero=Math.log(Math.E).toInteger()
+szero=[true].size
+sone=szero<<szero;
+stwo=szero<<(szero+szero);
+sthree=szero<<(szero+szero+szero);
+sfour=szero<<(szero+szero+szero+szero);
+sfive=szero<<(szero+szero+szero+szero+szero);
+ssix=szero<<(szero+szero+szero+szero+szero+szero);
 
 print((char)(ssix|sthree));
 print((char)(ssix|sfive|stwo|szero));

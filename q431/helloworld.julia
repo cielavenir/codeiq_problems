@@ -1,0 +1,22 @@
+#!/usr/bin/env julia
+szero=length([true])
+sone=szero<<szero
+stwo=szero<<(szero+szero)
+sthree=szero<<(szero+szero+szero)
+sfour=szero<<(szero+szero+szero+szero)
+sfive=szero<<(szero+szero+szero+szero+szero)
+ssix=szero<<(szero+szero+szero+szero+szero+szero)
+
+println(string(
+	char(ssix|sthree),
+	char(ssix|sfive|stwo|szero),
+	char(ssix|sfive|sthree|stwo),
+	char(ssix|sfive|sthree|stwo),
+	char(ssix|sfive|sthree|stwo|sone|szero),
+	char(sfive),
+	char(ssix|sfour|stwo|sone|szero),
+	char(ssix|sfive|sthree|stwo|sone|szero),
+	char(ssix|sfive|sfour|sone),
+	char(ssix|sfive|sthree|stwo),
+	char(ssix|sfive|stwo),
+))
