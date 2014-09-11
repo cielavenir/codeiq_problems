@@ -31,3 +31,9 @@
 ### q1015
 - モーニングクエスト：フィボナッチ数列
 - <https://codeiq.jp/ace/cielavenir/q1015>
+
+### q1054-q1055
+- RPythonに入門しよう！
+- <https://codeiq.jp/ace/cielavenir/q1054>
+- RPythonでモジュールを使うには?
+- <https://codeiq.jp/ace/cielavenir/q1055>

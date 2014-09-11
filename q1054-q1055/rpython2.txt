@@ -1,0 +1,22 @@
+・RPythonでモジュールを使うときは一工夫必要である。ここではheapqモジュールとrandomモジュールを考えよう。
+heapqモジュールは基本的にはRPythonに従うが、一箇所だけ従わないところがある。それはheapq.cmp_ltメソッドである。以下のようにすることで、使うことができるようになる。
+import heapq
+heapq.cmp_lt = lambda x,y: x<y #(1)
+
+#below is the test code
+def entry_point(argv):
+	heap=[]
+	lst=[3,5,2,1,4]
+	for e in lst: heapq.heappush(heap,e)
+	while heap: print(heapq.heappop(heap))
+	return 0
+ただし、これは汎用ではない。たとえば、lst=[[1,2],[1,3],[1,1]]とすると、Pythonでは動作するがRPythonでは動作しなくなる。
+※lst=[]の中身はリストやタプル以外であっても、Pythonで動作してRPythonで動作しないものであれば正解です。
+数値・文字列の混在や、lst=(3,5,2,1,4)としてRPythonでタプルを走査する際の制限を利用した答案もありました。
+
+・randomモジュールはRPythonに従わない部分が多いので、直接使うことはできない。しかし、RPythonにはrlibと呼ばれるモジュール群が用意されており、その中のrpython.rlib.[rrandom]モジュールにあるRandomクラスを使うことができる。このRandomクラスはrandomメソッド(0以上1未満の小数を返す)しか持たないが、randintメソッド(a以上b以下の整数を返す)を次のように定義することが可能である。
+import types
+from rpython.rlib.rrandom import Random
+def random_randint(self,a,b):
+	return int(a+self.random()*(b-a+1)) # (4)
+Random.randint=types.MethodType(random_randint,None,Random) # (5)

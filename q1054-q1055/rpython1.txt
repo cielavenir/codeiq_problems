@@ -1,0 +1,6 @@
+・RPythonはPythonのサブセットである。いくつかの制約により、変数の型を推論できるようになっている。このため、[静的]型付けされたコードに変換可能となっている。PyPyはRPythonで記述されたPython実装であり、セルフホスティングである。RPythonの他の使用例として、Ruby処理系の[Topaz]、PHP処理系の[HippyVM]がある。
+・RPythonプログラムにおいて必ず必要な関数は[target]である。この関数はエントリーポイントメソッド(以下、entry_point)を返す必要がある。
+def target(*args): return entry_point
+・__name__はPythonプログラムのファイル名に設定されるので、
+if __name__=="__main__": entry_point(__import__("sys").argv) # (5)
+とすれば、RPythonプログラムは(モジュールを使わない限り)Pythonプログラムと互換にできる。
