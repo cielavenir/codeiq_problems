@@ -44,7 +44,7 @@ int log(vector<pair<int,pair<int,int> > >&v){
 //v: first=ポイント second=人の番号(0-indexed)
 //d: 飛ばす数
 //返値: 勝者の番号(0-indexed)
-int joseph(vector<pair<int,int> >v,int d){
+int joseph(vector<pair<int,int> >&v,int d){
 	int c=0;
 	for(;v.size()>1;c=(c+d)%v.size()){
 		if(!--v[c].first){
