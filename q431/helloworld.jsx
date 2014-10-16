@@ -1,4 +1,4 @@
-// shebang isn't supported yet: /usr/bin/env jsx --run
+//usr/bin/env jsx --run $0 $@;exit
 class _Main{
         static function main(args : string[]) : void{
 		var szero=false.toString().length-true.toString().length;

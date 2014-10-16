@@ -1,4 +1,4 @@
-#!/usr/bin/env xcrun swift
+//usr/bin/env xcrun swift $0 $@;exit
 import Foundation
 
 let arr = [true]
@@ -10,8 +10,11 @@ let sfour = szero<<(szero+szero+szero+szero)
 let sfive = szero<<(szero+szero+szero+szero+szero)
 let ssix = szero<<(szero+szero+szero+szero+szero+szero)
 var data = NSMutableData(length:sthree|stwo)
-//var bytes = UnsafeArray(start:UnsafePointer<CChar>(data.bytes), length:data.length)
-var bytes = UnsafePointer<CChar>(data.bytes)
+
+//both of these works.
+//var bytes = UnsafeMutableBufferPointer(start:UnsafeMutablePointer<CChar>(data.bytes()), count:data.length())
+var bytes = UnsafeMutablePointer<CChar>(data.bytes())
+
 //must cast to CChar explicitly.
 bytes[szero-szero] = CChar(ssix|sthree)
 bytes[szero] = CChar(ssix|sfive|stwo|szero)

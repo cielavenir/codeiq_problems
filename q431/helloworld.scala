@@ -1,5 +1,4 @@
-#!/usr/bin/scala
-!#
+//usr/bin/env scala $0 $@;exit
 import scala.math
 
 object helloworld{
@@ -26,4 +25,3 @@ object helloworld{
 		println();
 	}
 }
-helloworld.main(args)
