@@ -1,51 +1,56 @@
 ## CodeIQ Problems
+- 競技プログラミングはあくまで初級者なので、問題を作るときはニッチを突くようにしてます。
 
 ### q431
-- Restricted Words (Hello World)
+- [言語指定] Restricted Words (Hello World)
 - <https://codeiq.jp/ace/cielavenir/q431>
 
 ### q495
-- Shortest Trip
+- [組合せ最適化] Shortest Trip
 - <https://codeiq.jp/ace/cielavenir/q495>
 
 ### q548
-- Detect Music Key
+- [音階検出] Detect Music Key
 - <https://codeiq.jp/ace/cielavenir/q548>
 
 ### q816
-- hybrid A+B problem
+- [コーディングパズル] hybrid A+B problem
 - <https://codeiq.jp/ace/cielavenir/q816>
 
 ### q817
-- C++の間違い探し
+- [C++] C++の間違い探し
 - <https://codeiq.jp/ace/cielavenir/q817>
 
 ### q984
-- モーニングクエスト：約数の和
+- [アルゴリズム] モーニングクエスト：約数の和
 - <https://codeiq.jp/ace/cielavenir/q984>
   - 優秀計算量賞：permil様、KTazakik様、にぃちぇ様、Tatt (タット)様、みけCAT様
   - ヘテロドックス賞：TokusiN様、カニ戯（ry様
 
 ### q985
-- Mercurialに入門しよう！
+- [Mercurial] Mercurialに入門しよう！
 - <https://codeiq.jp/ace/cielavenir/q985>
 
 ### q1015
-- モーニングクエスト：フィボナッチ数列
+- [アルゴリズム] モーニングクエスト：フィボナッチ数列
 - <https://codeiq.jp/ace/cielavenir/q1015>
   - 優秀計算量賞：hirokazu1020様、antimon2様、ryosy383様、kuuso様、orisano様、k.hamada様、みけCAT様、zeosutt様
 
-
 ### q1041
-- Color Spaceを変換しよう
+- [バイオインフォマティクス] Color Spaceを変換しよう
 - <https://codeiq.jp/ace/cielavenir/q1041>
 
 ### q1054-q1055
-- RPythonに入門しよう！
+- [RPython] RPythonに入門しよう！
 - <https://codeiq.jp/ace/cielavenir/q1054>
-- RPythonでモジュールを使うには?
+- [RPython] RPythonでモジュールを使うには?
 - <https://codeiq.jp/ace/cielavenir/q1055>
 
 ### q1120
-- モーニングクエスト：区分求積
+- [数学] モーニングクエスト：区分求積
 - <https://codeiq.jp/ace/cielavenir/q1120>
+  - 完全正解が1/3行かなかったこともあり、優秀計算量賞はいませんでした。
+
+### q
+- [言語不問] Restricted Base64
+- <https://codeiq.jp/ace/cielavenir/>
