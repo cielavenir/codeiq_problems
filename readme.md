@@ -52,5 +52,5 @@
   - 完全正解が1/3行かなかったこともあり、優秀計算量賞はいませんでした。
 
 ### q
-- [言語不問] Restricted Base64
+- [言語不問] Restricted Base32
 - <https://codeiq.jp/ace/cielavenir/>
