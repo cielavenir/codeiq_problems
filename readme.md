@@ -4,22 +4,27 @@
 ### q431
 - [言語指定] Restricted Words (Hello World)
 - <https://codeiq.jp/ace/cielavenir/q431>
+- CodeIQ Magazineに記事あり
 
 ### q495
 - [組合せ最適化] Shortest Trip
 - <https://codeiq.jp/ace/cielavenir/q495>
+- CodeIQ Magazineに記事あり
 
 ### q548
 - [音階検出] Detect Music Key
 - <https://codeiq.jp/ace/cielavenir/q548>
+- CodeIQ Magazineに記事あり
 
 ### q816
 - [コーディングパズル] hybrid A+B problem
 - <https://codeiq.jp/ace/cielavenir/q816>
+- CodeIQ Magazineに記事あり
 
 ### q817
 - [C++] C++の間違い探し
 - <https://codeiq.jp/ace/cielavenir/q817>
+- CodeIQ Magazineに記事あり
 
 ### q984
 - [アルゴリズム] モーニングクエスト：約数の和
@@ -37,7 +42,7 @@
   - 優秀計算量賞：hirokazu1020様、antimon2様、ryosy383様、kuuso様、orisano様、k.hamada様、みけCAT様、zeosutt様
 
 ### q1041
-- [バイオインフォマティクス] Color Spaceを変換しよう
+- [生命情報学] Color Spaceを変換しよう
 - <https://codeiq.jp/ace/cielavenir/q1041>
 
 ### q1054-q1055
@@ -51,6 +56,6 @@
 - <https://codeiq.jp/ace/cielavenir/q1120>
   - 完全正解が1/3行かなかったこともあり、優秀計算量賞はいませんでした。
 
-### q
+### q1169
 - [言語不問] Restricted Base32
-- <https://codeiq.jp/ace/cielavenir/>
+- <https://codeiq.jp/ace/cielavenir/q1169>
