@@ -1,3 +1,4 @@
+//usr/bin/env picoc $0 $@;exit
 #include <stdio.h>
 int szero,zero;
 int main(){
