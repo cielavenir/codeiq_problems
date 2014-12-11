@@ -1,4 +1,11 @@
 #!/usr/bin/ruby
+#coding:utf-8
+if RUBY_VERSION<'1.9'
+	$KCODE='u'
+else
+	Encoding.default_external=Encoding::UTF_8
+end
+
 require 'rubygems'
 require 'savon'
 
