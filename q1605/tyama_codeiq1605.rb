@@ -12,14 +12,14 @@ require 'stringio'
 require 'native'
 require 'encoding'
 
-Native(`module`).exports = lambda{|robot|
-	Native.call(`robot`,:respond,/codeiq/i){|msg|
-		Native.call(`msg`,:send,'CodeIQ')
-	}
-	Native.call(`robot`,:respond,/intercal (.+)$/i){|msg|
+Native(`module`).exports = ->(robot){
+	Native(robot).respond(/codeiq/i){|msg|Native(msg).send('CodeIQ')}
+	#Native.call(robot,:respond,/codeiq/i){|msg|Native(msg).send('CodeIQ')}
+
+	Native(robot).respond(/intercal (.+)$/i){|msg|
 		ret=StringIO.new
 		last=0
-		txt=Native(`msg.match[1]`).force_encoding('UTF-8')
+		txt=Native(msg).match[1].force_encoding('UTF-8')
 		txt=txt.each_byte.to_a
 		siz=txt.size
 		please=(siz+3)/4-2
@@ -37,7 +37,7 @@ Native(`module`).exports = lambda{|robot|
 		}
 		ret.puts 'PLEASE READ OUT ,1'
 		ret.print 'PLEASE GIVE UP'
-		Native.call(`msg`,:send,ret.string)
+		Native(msg).send(ret.string)
 	}
 }
 
