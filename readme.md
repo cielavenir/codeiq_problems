@@ -59,3 +59,12 @@
 ### q1169
 - [言語不問] Restricted Base32
 - <https://codeiq.jp/ace/cielavenir/q1169>
+
+### q1603
+- [言語不問] Restricted (仮)
+- <https://codeiq.jp/ace/cielavenir/q1603>
+
+### q1605
+- [Ruby/Opal] RubyでHubot!?
+- <https://codeiq.jp/ace/cielavenir/q1605>
+- CodeIQ Magazineに記事あり
