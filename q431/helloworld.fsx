@@ -1,3 +1,4 @@
+//usr/bin/env fsharpi $0 $@;exit
 let rec one () = Array.length [|true|];;
 let rec two () = one()+one();;
 let rec x (n) = two()*n;;
