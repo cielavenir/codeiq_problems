@@ -9,11 +9,11 @@ let sthree = szero<<(szero+szero+szero)
 let sfour = szero<<(szero+szero+szero+szero)
 let sfive = szero<<(szero+szero+szero+szero+szero)
 let ssix = szero<<(szero+szero+szero+szero+szero+szero)
-var data = NSMutableData(length:sthree|stwo)
+var data = ( NSMutableData(length:sthree|stwo) )!
 
 //both of these works.
-//var bytes = UnsafeMutableBufferPointer(start:UnsafeMutablePointer<CChar>(data.bytes()), count:data.length())
-var bytes = UnsafeMutablePointer<CChar>(data.bytes())
+//var bytes = UnsafeMutableBufferPointer(start:UnsafeMutablePointer<CChar>(data.bytes), count:data.length)
+var bytes = UnsafeMutablePointer<CChar>(data.bytes)
 
 //must cast to CChar explicitly.
 bytes[szero-szero] = CChar(ssix|sthree)
@@ -31,4 +31,4 @@ bytes[sthree|sone|szero] = CChar(sthree|sone)
 
 //both of these works.
 //NSFileHandle.fileHandleWithStandardOutput().writeData(data)
-print(NSString(data:data, encoding:NSUTF8StringEncoding))
+print(( NSString(data:data, encoding:NSUTF8StringEncoding) )!,terminator:String())
