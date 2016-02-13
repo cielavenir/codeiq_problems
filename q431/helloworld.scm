@@ -1,8 +1,8 @@
 #!/usr/bin/gosh
-(define one (lambda() (length '(#t))))
-(define two (lambda() (+ (one) (one))))
-(define x (lambda(n) (* (two) n)))
-(define y (lambda(n) (+ (* (two) n) (one))))
+(define (one) (length '(#t)))
+(define (two) (+ (one) (one)))
+(define (x n) (* (two) n))
+(define (y n) (+ (* (two) n) (one)))
 (display (integer->char(x(x(x(y(x(x(one)))))))))
 (display (integer->char(y(x(y(x(x(y(one)))))))))
 (display (integer->char(x(x(y(y(x(y(one)))))))))
