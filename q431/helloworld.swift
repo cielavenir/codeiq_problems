@@ -1,4 +1,4 @@
-//usr/bin/env xcrun swift $0 $@;exit
+//usr/bin/env swift $0 $@;exit
 import Foundation
 
 let arr = [true]
