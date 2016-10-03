@@ -1,3 +1,4 @@
+#!/usr/bin/env runghc
 -- import Foreign.Storable
 import Data.Char
 -- one = length $ show $ sizeOf $ True -- 4
