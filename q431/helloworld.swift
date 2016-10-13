@@ -11,9 +11,14 @@ let sfive = szero<<(szero+szero+szero+szero+szero)
 let ssix = szero<<(szero+szero+szero+szero+szero+szero)
 var data = ( NSMutableData(length:sthree|stwo) )!
 
-//both of these works.
+//Swift2
 //var bytes = UnsafeMutableBufferPointer(start:UnsafeMutablePointer<CChar>(data.bytes), count:data.length)
-var bytes = UnsafeMutablePointer<CChar>(data.bytes)
+//var bytes = UnsafeMutablePointer<CChar>(data.bytes)
+
+//Swift3
+//both of these works.
+//var bytes = UnsafeMutableBufferPointer(start:UnsafeMutablePointer<CChar>(mutating: data.bytes.assumingMemoryBound(to: CChar.self)), count:data.length)
+var bytes = UnsafeMutablePointer<CChar>(mutating: data.bytes.assumingMemoryBound(to: CChar.self))
 
 //must cast to CChar explicitly.
 bytes[szero-szero] = CChar(ssix|sthree)
@@ -29,6 +34,11 @@ bytes[sthree|szero] = CChar(ssix|sfive|sthree|stwo)
 bytes[sthree|sone] = CChar(ssix|sfive|stwo)
 bytes[sthree|sone|szero] = CChar(sthree|sone)
 
-//both of these works.
+//Swift2
 //NSFileHandle.fileHandleWithStandardOutput().writeData(data)
-print(( NSString(data:data, encoding:NSUTF8StringEncoding) )!,terminator:String())
+//print(( NSString(data:data, encoding:NSUTF8StringEncoding) )!,terminator:String())
+
+//Swift3
+//both of these works.
+//FileHandle.standardOutput.write(data as Data)
+print(( NSString(data:data as Data, encoding:String.Encoding.utf8.rawValue) )!,terminator:String())
