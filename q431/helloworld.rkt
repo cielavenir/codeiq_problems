@@ -1,0 +1,18 @@
+#!/usr/bin/env racket
+#lang at-exp racket
+(define (one) @length{@|'(#t)|})
+(define (two) (+ (one) (one)))
+(define (x n) (* (two) n))
+(define (y n) (+ (* (two) n) (one)))
+(display (integer->char(x(x(x(y(x(x(one)))))))))
+(display (integer->char(y(x(y(x(x(y(one)))))))))
+(display (integer->char(x(x(y(y(x(y(one)))))))))
+(display (integer->char(x(x(y(y(x(y(one)))))))))
+(display (integer->char(y(y(y(y(x(y(one)))))))))
+(display (integer->char(x(x(x(x(x(one))))))))
+(display (integer->char(y(y(y(x(y(x(one)))))))))
+(display (integer->char(y(y(y(y(x(y(one)))))))))
+(display (integer->char(x(y(x(x(y(y(one)))))))))
+(display (integer->char(x(x(y(y(x(y(one)))))))))
+(display (integer->char(x(x(y(x(x(y(one)))))))))
+(display (integer->char(x(y(x(one))))))
