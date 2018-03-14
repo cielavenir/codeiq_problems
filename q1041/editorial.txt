@@ -6,3 +6,42 @@ C CATG
 G GTAC
 T TGCA
 あとは単純な文字列処理ですので、難しくはないと思います。
+
+## 問題文
+
+生命情報学（バイオインフォマティクス）では、塩基配列は、FASTAフォーマットという、ヘッダと塩基配列(A=アデニン、T=チミン、G=グアニン、C=シトシン)列の組で表されます。
+遺伝子発現を調べるには、シークエンサーですべてのRNAを読み取って(リード)、DNAに変換して、ゲノムにマッピングすれば良いということになります。しかし、Solidシークエンサーの出力は少し変わっていて、塩基配列(Base Space)ではなく、Color Spaceというもので出力されます。
+Color Spaceは、隣接する2塩基と次のように対応します(行=1文字目、列=2文字目)。
+
+|塩基|A|C|G|T|
+|:--|:--|:--|:--|:--|
+|A|0|1|2|3|
+|C|1|0|3|2|
+|G|2|3|0|1|
+|T|3|2|1|0|
+
+Color Spaceだと、1塩基多型(SNP)の場合に隣接する2つのcolorが変わるので、シークエンスエラーによる擬陽性を抑えられる点で検出力が高いのですが、Base Spaceにしか対応していない解析ツールも多く存在します。そこで、Color SpaceをBase Spaceに変換してみましょう。なお、各リードの長さは100文字未満とします。
+
+入力：csfasta形式
+出力：FASTA形式
+
+入出力例
+入力
+
+```
+>sample01
+C103023011232302323231301122233320313322132310333233003233231023023000231223
+>sample02
+G013232302011113133323231113100032313121302131301303000310323130301323123032
+```
+
+出力
+
+```
+>sample01
+CAATTCGGTGATCGGATCGATGCCACTCTATAGGCATAGACGATGGCGCTATTTAGCGATGGATTCGGGGATGAGC
+>sample02
+GGTAGCTAAGGTGTGCATATCGATGTGCAAAATCGTACTGCCTGCATTGCCGGGGCAATCGTAATTGCTACTAATC
+```
+
+data.inに対する解答を、answer.txtを熟読の上提出して下さい。
