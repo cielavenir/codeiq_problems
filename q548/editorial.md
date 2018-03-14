@@ -78,12 +78,15 @@ true,false,true,false,true,true,false,true,false,true,false,true
 で、その主音は **C** です。
 
 [入力]
->T
->N1
->Key1 Key2 … keyN1
->…
->NT
->Key1 Key2 … keyNT
+
+```
+T
+N1
+Key1 Key2 … keyN1
+…
+NT
+Key1 Key2 … keyNT
+```
 
 先頭行はデータセットの数Tが入ります。
 続くT&lowast;2行は各データセットからなります。1行目は音のリストの数、2行目は音のリストです。
@@ -98,25 +101,29 @@ true,false,true,false,true,true,false,true,false,true,false,true
 [サンプル]
 サンプル(sample.in)は、
 
->5
->1
->C
->7
->C D E F G A B
->10
->A B C D E F G A B C
->8
->C Cs D E F G A B
->3
->C Cs Fs
+```
+5
+1
+C
+7
+C D E F G A B
+10
+A B C D E F G A B C
+8
+C Cs D E F G A B
+3
+C Cs Fs
+```
 
 となっています。これに対応する出力は、
 
->C Cs Ds F G Gs As
->C
->C
->invalid
->Cs
+```
+C Cs Ds F G Gs As
+C
+C
+invalid
+Cs
+```
 
 となります(sample.ans)。(公開当初のsample.ansは誤っていました。申し訳ございません)
 音の数が7未満でも音階が決まりうる場合に注意して下さい。
