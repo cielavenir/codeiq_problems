@@ -4,33 +4,28 @@
 ### q431
 - [言語指定] Restricted Words (Hello World)
 - <https://codeiq.jp/q/431>
-- CodeIQ Magazineに記事あり
 - なんか、無から有を作り出せ的な問題。出力については1さえ作れれば演算で当該文字コードは得られると思うのでおまけです。
 
 ### q495
 - [組合せ最適化] Shortest Trip
 - <https://codeiq.jp/q/495>
-- CodeIQ Magazineに記事あり
 - CodeIQのコード銀行(?)に「グーテンベルグ印刷の活字」という問題があり、活字のグリッドと文章が与えられるので、文章に合った活字をグリッドから探して、その位置(同じ位置は一回しか使えない)を順番に出力していく問題でした。
 - 活字を拾う機械を動かす合計距離を最小化するにはどうすればよいだろうかと思って出題してみましたが、あまりおもしろくなかったかもしれませんね…
 
 ### q548
 - [音階検出] Detect Music Key
 - <https://codeiq.jp/q/548>
-- CodeIQ Magazineに記事あり
 - 耳コピにはまず曲調を当てることってどこかで見たので、そこから作った問題です。ちなみに私はこの問題をつくってから耳コピを試みたことはありませんorz
 
 ### q816
 - [コーディングパズル] hybrid A+B problem
 - <https://codeiq.jp/q/816>
-- CodeIQ Magazineに記事あり
 - 鍋谷さんのhello world x 3の逆バージョン。だけど、hello world x 3の方が面白い問題だったと思う。
 
 ### q817
 - [C++] C++の間違い探し
-- <https://codeiq.jp/ace/cielavenir/q817>
-- CodeIQ Magazineに記事あり
-- 動機は、rprocon 2013で、1行の誤りが原因でパーカーを落としたことにあります。
+- <https://codeiq.jp/q/817>
+- 最大の動機は、rprocon 2013で、1行の誤りが原因でパーカーを落としたことにあります。
 - 模範解答にバグが有り申し訳ありませんでした。
 
 ### q984
@@ -82,8 +77,8 @@
 ### q1605
 - [Ruby/Opal] RubyでHubot!?
 - <https://codeiq.jp/q/1605>
-- CodeIQ Magazineに記事あり
 - Opalという武器を携えてRubotyにあえて立ち向かうみたいな動機があったと思う。ちなみに今はHubotはおろかRubotyすら使っていません。
+- tbpgrさんの(『独創的にHubotを動かす』問題)[http://tbpgr.hatenablog.com/entry/20141104/1415109991]に感謝します。
 
 ### q2203
 - デスコロC #1
