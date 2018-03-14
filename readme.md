@@ -78,7 +78,7 @@
 - [Ruby/Opal] RubyでHubot!?
 - <https://codeiq.jp/q/1605>
 - Opalという武器を携えてRubotyにあえて立ち向かうみたいな動機があったと思う。ちなみに今はHubotはおろかRubotyすら使っていません。
-- tbpgrさんの(『独創的にHubotを動かす』問題)[http://tbpgr.hatenablog.com/entry/20141104/1415109991]に感謝します。
+- tbpgrさんの[『独創的にHubotを動かす』問題](http://tbpgr.hatenablog.com/entry/20141104/1415109991)に感謝します。
 
 ### q2203
 - デスコロC #1
