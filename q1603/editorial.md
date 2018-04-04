@@ -35,9 +35,10 @@ https://github.com/cielavenir/codeiq_problems/tree/master/q1603 で公開して�
 
 - 加算
 
-全加算器を実装します。
+全加算器を実装します。キャリーフラグcは、`(a&b&mask) ^ (b&c) ^ (c&a)`で作成できます。
 
 - 減算
+
 全加算器の実装が引数(のコピー)を操作する実装であれば、操作する側は負の値でも問題なく操作できます。このとき、減算 `sub(a,b)` は、 `add(~add(~zero,b),a)`と表現できます。
 
 以上により、行列の繰り返し2乗法全体をビット演算のみで実現、この問題を解くことができました。
@@ -46,9 +47,53 @@ https://github.com/cielavenir/codeiq_problems/tree/master/q1603 で公開して�
 https://www.kaoriya.net/blog/2013/02/04/
 を参考にしています。
 
-全体的に、全加算器の実装が割と重かったでしょうか。
+## 非想定解紹介
 
-Pythonでoperator.add()するとかはなしの方向でお願い致します…
+### Python
 
-作業履歴によると、https://yukicoder.me/problems/582 に作っていたという履歴がありました。そして、柳井氏のダンジョン問題 (https://puzzleandgame.com/ja/code_dungeon/) のページを参考に提出制限スクリプトも用意していました。
-ここまでしていたのに結局公開しなかった理由はもはや知るすべはありません。
+- import operator
+    - <https://yukicoder.me/submissions/249101>
+
+### Ruby
+
+- send
+    - <https://yukicoder.me/submissions/249355>
+
+### C++
+
+- (ll)div / fma
+    - <https://yukicoder.me/submissions/248916>
+- functional [plus](http://www.cplusplus.com/reference/functional/plus/) (etc)
+    - これは新しい知識、収穫でした。
+    - <https://yukicoder.me/submissions/249059>
+
+### C\# ###
+
+- System.Decimal [Add](https://msdn.microsoft.com/ja-jp/library/system.decimal.add.aspx) (etc)
+    - これも収穫。
+    - <https://yukicoder.me/submissions/249062>
+
+### D
+
+- [mixin](https://dlang.org/articles/mixin.html)
+    - なんだこの機能。変態か…？
+    - ~~チルダ禁止~~ にすると想定解が通らないんだよなぁorz
+    - <https://yukicoder.me/submissions/249079>
+
+### Java
+
+- BigInteger
+    - 当然知っていましたが、完全に盲点でした。
+    - <https://yukicoder.me/submissions/248900>
+
+てか、文字列「eval」だけは禁止しておけばよかったかなぁと思っています。
+
+- ちゃんと全加算器を実装してくださった方、ありがとうございますToT
+
+## コメンタリー
+
+- 作業履歴によると、https://yukicoder.me/problems/582 に作っていたという履歴がありました。そして、柳井氏のダンジョン問題 (https://puzzleandgame.com/ja/code_dungeon/) のページを参考に提出制限スクリプトも用意していました。
+- ここまでしていたのに結局公開しなかった理由はもはや知るすべはありません。
+
+- 時間制限の決め方がかなり難しかったです。当初はEasy/Hardは同じテストケースでしたが、Rubyが通らず、やむを得ずHardはテスト数を減らしました。
+
