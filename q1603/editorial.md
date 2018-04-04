@@ -29,6 +29,8 @@ https://github.com/cielavenir/codeiq_problems/tree/master/q1603 で公開して�
 
 リテラルの禁止について、%qリテラル、円記号も封じているので、リテラルで出来ることは殆どないのではないかと思っています。
 
+- C++ <https://yukicoder.me/submissions/242839>
+
 ### Hard
 
 加算と減算が禁止されています。
@@ -46,6 +48,9 @@ https://github.com/cielavenir/codeiq_problems/tree/master/q1603 で公開して�
 なお、LLだと全加算器の実装によりTLE回避に成功したりしなかったりします。Ruby版の解答は
 https://www.kaoriya.net/blog/2013/02/04/
 を参考にしています。
+
+- C++ <https://yukicoder.me/submissions/242811>
+- Ruby <https://yukicoder.me/submissions/242832>
 
 ## 非想定解紹介
 
@@ -92,7 +97,7 @@ https://www.kaoriya.net/blog/2013/02/04/
 
 ## コメンタリー
 
-- 作業履歴によると、https://yukicoder.me/problems/582 に作っていたという履歴がありました。そして、柳井氏のダンジョン問題 (https://puzzleandgame.com/ja/code_dungeon/) のページを参考に提出制限スクリプトも用意していました。
+- 作業履歴によると、<https://yukicoder.me/problems/582> に作っていたという履歴がありました。そして、柳井氏のダンジョン問題 (<https://puzzleandgame.com/ja/code_dungeon/>) のページを参考に提出制限スクリプトも用意していました。
 - ここまでしていたのに結局公開しなかった理由はもはや知るすべはありません。
 
 - 時間制限の決め方がかなり難しかったです。当初はEasy/Hardは同じテストケースでしたが、Rubyが通らず、やむを得ずHardはテスト数を減らしました。
