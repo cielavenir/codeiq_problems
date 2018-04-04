@@ -69,10 +69,12 @@
 - ダンジョン問題を解く中で出題センスがわかってきたかなと思って試したら穴が見つかって死亡した問題。言語不問は難しい。
 
 ### q1603
-- [言語不問] Restricted (仮)
+- [言語不問] Restricted Lucas
 - <https://codeiq.jp/q/1603>
-- 未公開
-- yukicoderにて出題予定。お楽しみに。難易度はBase32の5倍以上はあります。
+- yukicoderにて供養
+    - <https://yukicoder.me/problems/no/3036>
+    - <https://yukicoder.me/problems/no/3037>
+- やっぱり言語不問って難しいなぁと思った。そういえば柳井さんの問題ではeval系禁止にしてたんでしたっけ。対策すればよかったかなぁ。でも穴なんていくらでもあるんだよなぁorz
 
 ### q1605
 - [Ruby/Opal] RubyでHubot!?
